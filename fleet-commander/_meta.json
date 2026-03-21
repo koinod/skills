@@ -1,0 +1,44 @@
+{
+  "name": "fleet-commander",
+  "version": "1.0.0",
+  "description": "Multi-agent fleet orchestration engine for KOINO Capital. Manages agent discovery, task decomposition, intelligent routing, shared memory, conflict resolution, failure recovery, and cost optimization across distributed machine fleets.",
+  "author": "KOINO Capital",
+  "license": "PROPRIETARY",
+  "tags": [
+    "orchestration",
+    "multi-agent",
+    "fleet",
+    "swarm",
+    "coordination",
+    "distributed-systems"
+  ],
+  "requires": [
+    "bash",
+    "ssh",
+    "sshpass",
+    "jq",
+    "curl"
+  ],
+  "compatible_with": [
+    "openclaw>=2026.2.0"
+  ],
+  "entry_point": "SKILL.md",
+  "scripts": {
+    "fleet-status": "scripts/fleet-status.sh",
+    "dispatch": "scripts/dispatch.sh"
+  },
+  "fleet_machines": {
+    "omni": { "role": "ceo", "type": "local", "arch": "x86_64" },
+    "bmo": { "role": "specialist", "type": "remote", "arch": "arm64" },
+    "oci": { "role": "workhorse", "type": "remote", "arch": "x86_64" },
+    "sailorsbot1": { "role": "client-ops", "type": "remote", "arch": "x86_64" }
+  },
+  "coordination_patterns": [
+    "scatter-gather",
+    "pipeline",
+    "swarm",
+    "tournament",
+    "consensus",
+    "specialist"
+  ]
+}

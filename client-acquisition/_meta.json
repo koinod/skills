@@ -1,0 +1,44 @@
+{
+  "name": "client-acquisition",
+  "version": "1.0.0",
+  "description": "Full-funnel client acquisition system for any service business. ICP building, lead gen, outreach sequencing, qualification, closing, and retention.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": ["sales", "outreach", "lead-generation", "closing", "retention", "agency", "b2b"],
+  "triggers": [
+    "I need more clients",
+    "build my pipeline",
+    "client acquisition",
+    "lead generation",
+    "cold outreach",
+    "prospect research",
+    "qualify leads",
+    "write a proposal",
+    "onboard a client",
+    "client health check",
+    "generate case study",
+    "upsell strategy"
+  ],
+  "commands": {
+    "prospect": "Research and score a prospect against your ICP",
+    "outreach": "Generate personalized multi-channel outreach sequence",
+    "qualify": "Score a lead using BANT/MEDDIC frameworks",
+    "propose": "Generate a 60-second proposal for a qualified lead",
+    "onboard": "Create onboarding workflow for a new client",
+    "health": "Score client health and detect churn/upsell signals",
+    "pipeline": "Full pipeline audit — stages, velocity, bottlenecks",
+    "icp": "Build or refine your Ideal Client Profile",
+    "casestudy": "Generate case study from client results"
+  },
+  "dependencies": {
+    "tools": ["ollama", "curl", "jq"],
+    "optional": ["apollo-api", "linkedin-api", "stripe-api"]
+  },
+  "config": {
+    "ollama_model": "qwen2.5:3b",
+    "ollama_url": "http://localhost:11434",
+    "max_emails_per_day": 50,
+    "follow_up_cadence_days": [3, 7, 14],
+    "qualification_threshold": 70
+  }
+}

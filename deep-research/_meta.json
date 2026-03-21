@@ -1,0 +1,27 @@
+{
+  "name": "deep-research",
+  "version": "1.0.0",
+  "description": "Institutional-grade deep research engine. Multi-source triangulation, contrarian analysis, confidence scoring, and actionable synthesis across 6 research modes.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": ["research", "intelligence", "analysis", "osint", "competitive-intelligence", "alpha"],
+  "triggers": ["/research", "/investigate", "/intel", "/deep-dive"],
+  "modes": ["market", "technical", "people", "trend", "risk", "alpha"],
+  "inputs": {
+    "topic": { "type": "string", "required": true, "description": "The subject to research" },
+    "mode": { "type": "string", "required": false, "default": "market", "enum": ["market", "technical", "people", "trend", "risk", "alpha"] },
+    "depth": { "type": "string", "required": false, "default": "standard", "enum": ["quick", "standard", "exhaustive"] },
+    "output_format": { "type": "string", "required": false, "default": "report", "enum": ["report", "brief", "raw", "csv"] }
+  },
+  "outputs": {
+    "report": "Structured research report with confidence scores and citations",
+    "sources": "Evaluated and scored source list",
+    "blindspots": "Identified gaps in available information",
+    "actions": "Prioritized next steps"
+  },
+  "estimated_time": {
+    "quick": "2-5 minutes",
+    "standard": "10-20 minutes",
+    "exhaustive": "30-60 minutes"
+  }
+}

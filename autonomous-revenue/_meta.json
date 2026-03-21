@@ -1,0 +1,28 @@
+{
+  "name": "autonomous-revenue",
+  "version": "1.0.0",
+  "description": "Enables AI agents to autonomously identify market gaps, create digital products, and generate revenue with ethical guardrails",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": ["revenue", "autonomous", "digital-products", "stripe", "market-detection", "ethical-ai"],
+  "requires": {
+    "tools": ["curl", "jq", "python3"],
+    "env": ["STRIPE_SECRET_KEY"],
+    "optional_env": ["OPENROUTER_API_KEY", "OLLAMA_HOST"]
+  },
+  "triggers": {
+    "cron": [
+      { "name": "market-scan", "schedule": "0 6 * * *", "description": "Daily market gap detection" },
+      { "name": "revenue-report", "schedule": "0 21 * * *", "description": "Nightly revenue summary" },
+      { "name": "product-health", "schedule": "0 12 * * 1", "description": "Weekly product performance review" }
+    ],
+    "manual": ["create-product", "price-test", "launch", "retire-product"]
+  },
+  "ethical_constraints": {
+    "max_products_per_day": 2,
+    "require_human_approval_above": 100,
+    "banned_categories": ["health-claims", "get-rich-quick", "fake-testimonials", "scraped-content-resale"],
+    "mandatory_disclosures": ["ai-generated", "no-refund-policy-must-exist"],
+    "cooldown_between_launches_hours": 24
+  }
+}

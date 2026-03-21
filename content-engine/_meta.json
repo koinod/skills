@@ -1,0 +1,61 @@
+{
+  "name": "content-engine",
+  "version": "1.0.0",
+  "description": "Universal content repurposing system. Takes any raw content (podcast, webinar, video, blog, course) and outputs a complete multi-platform content ecosystem with hooks, calendars, engagement scoring, and brand voice enforcement.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "category": "content",
+  "tags": ["content", "repurposing", "social-media", "short-form", "hooks", "calendar", "brand-voice"],
+  "requires": {
+    "tools": ["ollama", "jq", "curl"],
+    "models": ["qwen2.5:3b"],
+    "env_vars": []
+  },
+  "inputs": {
+    "source": {
+      "type": "string",
+      "required": true,
+      "description": "Path to raw content file (transcript, blog post, video notes) or URL"
+    },
+    "brand_voice": {
+      "type": "string",
+      "required": false,
+      "description": "Path to brand voice config file (see references/brand-voice-template.md)"
+    },
+    "platforms": {
+      "type": "array",
+      "required": false,
+      "default": ["instagram", "tiktok", "linkedin", "x", "youtube_shorts"],
+      "description": "Target platforms for output"
+    },
+    "clips": {
+      "type": "integer",
+      "required": false,
+      "default": 20,
+      "description": "Number of clips to generate (15-30)"
+    },
+    "output_dir": {
+      "type": "string",
+      "required": false,
+      "default": "./content-engine-output",
+      "description": "Output directory for all generated assets"
+    }
+  },
+  "outputs": {
+    "clips/": "Individual clip files with hook, body, CTA, platform variants",
+    "calendar.md": "7-day posting calendar with optimal times",
+    "hook-vault-applied.md": "Hook formulas applied to this specific content",
+    "engagement-scores.csv": "Predicted engagement ranking for all clips",
+    "hashtag-strategy.md": "Platform-specific hashtag/keyword strategy",
+    "caption-variants.md": "A/B caption variants for split testing",
+    "thumbnail-concepts.md": "Visual concepts with text overlay suggestions",
+    "weekly-report-template.md": "Analytics framework for tracking performance",
+    "brand-voice-check.md": "Brand consistency audit of all outputs"
+  },
+  "estimated_tokens": {
+    "per_minute_of_source": 800,
+    "20_clips_total": "~25,000 tokens input + ~40,000 tokens output",
+    "cost_local_ollama": "$0.00",
+    "cost_vs_content_manager": "$3,000-5,000/month saved"
+  }
+}

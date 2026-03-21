@@ -1,0 +1,46 @@
+{
+  "name": "sales-call-intelligence",
+  "version": "1.0.0",
+  "description": "Extract objection patterns, buying signals, emotional arcs, golden moments, and personalized coaching from sales call transcripts. Enterprise-grade conversation intelligence without the enterprise price tag.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": [
+    "sales",
+    "conversation-intelligence",
+    "coaching",
+    "objection-handling",
+    "revenue",
+    "call-analysis",
+    "battle-cards",
+    "sales-methodology"
+  ],
+  "category": "business/sales",
+  "pricing": {
+    "suggested_retail": "$49/mo",
+    "token_cost_per_call": "~2000-4000 tokens input, ~3000 output",
+    "avg_cost_per_analysis": "$0.02-0.08 depending on model"
+  },
+  "requirements": {
+    "openclaw": ">=2026.1.0",
+    "models": ["any LLM with 8K+ context"],
+    "inputs": ["transcript text, VTT, SRT, or plain text"]
+  },
+  "commands": {
+    "analyze": "Full single-call analysis with all 8 dimensions",
+    "quick": "60-second rapid scoring (talk ratio, energy, verdict)",
+    "battlecard": "Generate objection battle card from call patterns",
+    "patterns": "Cross-call pattern recognition (requires 5+ calls)",
+    "drill": "Generate personalized practice scenarios from weaknesses",
+    "coach": "Coaching report with methodology-graded feedback",
+    "compare": "Side-by-side comparison of two calls"
+  },
+  "supported_formats": [
+    "plain text transcript",
+    "VTT (WebVTT)",
+    "SRT (SubRip)",
+    "Fathom export",
+    "Otter.ai export",
+    "Fireflies.ai export",
+    "JSON with speaker labels and timestamps"
+  ]
+}

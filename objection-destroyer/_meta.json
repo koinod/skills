@@ -1,0 +1,32 @@
+{
+  "name": "objection-destroyer",
+  "version": "1.0.0",
+  "description": "Universal sales objection handling system. Real-time classification, response generation, practice drilling, and win-rate tracking across all industries.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": ["sales", "objections", "negotiation", "persuasion", "closing", "coaching"],
+  "requires": {
+    "ollama": "qwen2.5:3b",
+    "shell": "bash"
+  },
+  "commands": {
+    "destroy": "Classify and respond to an objection in real-time",
+    "drill": "Practice mode — random objection scenarios, timed responses",
+    "analyze": "Analyze a conversation transcript for objection patterns",
+    "library": "Browse objection database by industry and type",
+    "score": "Track and report win rates by objection type and framework",
+    "preempt": "Generate preemptive objection handling for a pitch"
+  },
+  "industries": ["saas", "insurance", "real-estate", "d2d", "agency", "recruiting", "negotiation"],
+  "frameworks": [
+    "feel-felt-found",
+    "isolate-and-solve",
+    "boomerang",
+    "preemptive-strike",
+    "social-proof-stack",
+    "cost-of-inaction",
+    "the-takeaway"
+  ],
+  "objection_types": ["price", "timing", "authority", "need", "trust", "competition"],
+  "ip_notice": "KOINO Capital original IP. All rights reserved."
+}

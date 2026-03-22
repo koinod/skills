@@ -1,44 +1,52 @@
 {
-  "name": "client-acquisition",
+  "name": "client-acquisition-lite",
   "version": "1.0.0",
-  "description": "Full-funnel client acquisition system for any service business. ICP building, lead gen, outreach sequencing, qualification, closing, and retention.",
+  "description": "Free client acquisition starter kit. ICP builder, prospect research, PAS cold email framework, 3-touch follow-up, and basic qualification checklist.",
   "author": "KOINO Capital",
-  "license": "proprietary",
-  "tags": ["sales", "outreach", "lead-generation", "closing", "retention", "agency", "b2b"],
+  "license": "free",
+  "homepage": "https://koino.capital/kits",
+  "tags": ["sales", "outreach", "lead-generation", "cold-email", "b2b", "free", "starter"],
   "triggers": [
     "I need more clients",
-    "build my pipeline",
     "client acquisition",
     "lead generation",
     "cold outreach",
     "prospect research",
-    "qualify leads",
-    "write a proposal",
-    "onboard a client",
-    "client health check",
-    "generate case study",
-    "upsell strategy"
+    "cold email",
+    "ICP",
+    "ideal client profile"
   ],
   "commands": {
-    "prospect": "Research and score a prospect against your ICP",
-    "outreach": "Generate personalized multi-channel outreach sequence",
-    "qualify": "Score a lead using BANT/MEDDIC frameworks",
-    "propose": "Generate a 60-second proposal for a qualified lead",
-    "onboard": "Create onboarding workflow for a new client",
-    "health": "Score client health and detect churn/upsell signals",
-    "pipeline": "Full pipeline audit — stages, velocity, bottlenecks",
     "icp": "Build or refine your Ideal Client Profile",
-    "casestudy": "Generate case study from client results"
+    "prospect": "Research and score a prospect against your ICP",
+    "outreach": "Generate PAS cold email + 3-touch follow-up",
+    "qualify": "Basic qualification checklist for a lead"
+  },
+  "upsell": {
+    "full_version": "koino.capital/kits",
+    "additional_features": [
+      "4 cold email frameworks (PAS, AIDA, BAB, SSS)",
+      "LinkedIn + DM outreach sequences",
+      "BANT/MEDDIC scoring with discovery questions",
+      "60-second proposal generator",
+      "Pricing strategy optimization",
+      "Contract/SOW templates",
+      "Client health scoring + churn detection",
+      "Referral automation",
+      "Multi-channel sequencing",
+      "Personalization engine",
+      "Pipeline audit + forecasting",
+      "Case study generator",
+      "Client onboarding workflows"
+    ]
   },
   "dependencies": {
-    "tools": ["ollama", "curl", "jq"],
-    "optional": ["apollo-api", "linkedin-api", "stripe-api"]
+    "tools": ["ollama", "curl"],
+    "optional": []
   },
   "config": {
     "ollama_model": "qwen2.5:3b",
     "ollama_url": "http://localhost:11434",
-    "max_emails_per_day": 50,
-    "follow_up_cadence_days": [3, 7, 14],
-    "qualification_threshold": 70
+    "max_emails_per_day": 50
   }
 }

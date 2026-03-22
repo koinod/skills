@@ -1,44 +1,37 @@
 {
-  "name": "fleet-commander",
+  "name": "Fleet Commander Lite",
+  "slug": "fleet-commander-lite",
   "version": "1.0.0",
-  "description": "Multi-agent fleet orchestration engine for KOINO Capital. Manages agent discovery, task decomposition, intelligent routing, shared memory, conflict resolution, failure recovery, and cost optimization across distributed machine fleets.",
+  "description": "Lightweight multi-agent coordination — agent registry, specialist routing, pipeline chaining, SSH dispatch, and health monitoring. Free starter kit.",
   "author": "KOINO Capital",
-  "license": "PROPRIETARY",
-  "tags": [
-    "orchestration",
-    "multi-agent",
-    "fleet",
-    "swarm",
-    "coordination",
-    "distributed-systems"
+  "license": "free",
+  "tier": "lite",
+  "full_version_url": "https://koino.capital/kits",
+  "tags": ["multi-agent", "orchestration", "fleet", "coordination", "ssh", "devops"],
+  "capabilities": [
+    "agent-registry",
+    "specialist-routing",
+    "pipeline-chaining",
+    "ssh-dispatch",
+    "health-check",
+    "status-dashboard"
   ],
-  "requires": [
-    "bash",
-    "ssh",
-    "sshpass",
-    "jq",
-    "curl"
+  "excluded_from_full": [
+    "scatter-gather-pattern",
+    "swarm-pattern",
+    "tournament-pattern",
+    "consensus-pattern",
+    "weighted-routing",
+    "shared-memory",
+    "circuit-breaker",
+    "cost-optimization",
+    "escalation-matrix",
+    "performance-scoring",
+    "full-communication-protocol",
+    "scaling-analysis",
+    "post-mortem-templates",
+    "failure-mode-documentation"
   ],
-  "compatible_with": [
-    "openclaw>=2026.2.0"
-  ],
-  "entry_point": "SKILL.md",
-  "scripts": {
-    "fleet-status": "scripts/fleet-status.sh",
-    "dispatch": "scripts/dispatch.sh"
-  },
-  "fleet_machines": {
-    "omni": { "role": "ceo", "type": "local", "arch": "x86_64" },
-    "bmo": { "role": "specialist", "type": "remote", "arch": "arm64" },
-    "oci": { "role": "workhorse", "type": "remote", "arch": "x86_64" },
-    "sailorsbot1": { "role": "client-ops", "type": "remote", "arch": "x86_64" }
-  },
-  "coordination_patterns": [
-    "scatter-gather",
-    "pipeline",
-    "swarm",
-    "tournament",
-    "consensus",
-    "specialist"
-  ]
+  "created": "2026-03-22",
+  "updated": "2026-03-22"
 }

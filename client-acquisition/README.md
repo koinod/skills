@@ -1,55 +1,48 @@
-# Client Acquisition Skill
+# Client Acquisition — Lite (Free)
 
-**KOINO Capital Original IP** -- Universal client acquisition system for any service business.
+Land clients with targeted outreach, not spam. This free skill gives you the foundation: define your ideal client, research prospects, write cold emails that get replies, and qualify leads before wasting time.
 
-## What It Does
+## What You Get
 
-Handles the full client acquisition funnel:
+- **ICP Builder** — Define exactly who you should (and shouldn't) sell to, with a weighted scoring rubric
+- **Prospect Research** — Score any company or person against your ICP, find personalization hooks
+- **PAS Cold Email Framework** — Problem-Agitate-Solve emails that are 4-6 lines, plain text, human-sounding
+- **3-Touch Follow-Up Sequence** — Days 3, 7, and 14 with escalating value
+- **Qualification Checklist** — Quick yes/no filter so you stop chasing dead deals
 
-| Stage | Commands | What You Get |
-|-------|----------|-------------|
-| **Define** | `/icp` | Ideal Client Profile with scoring rubric |
-| **Find** | `/prospect` | Researched prospects scored against your ICP |
-| **Reach** | `/outreach` | Personalized multi-channel sequences (email, LinkedIn, DM) |
-| **Qualify** | `/qualify` | BANT + MEDDIC scoring with next-action recommendations |
-| **Close** | `/propose` | 60-second proposals with ROI anchoring and risk reversal |
-| **Onboard** | `/onboard` | Complete onboarding workflow with checklists |
-| **Retain** | `/health` | Client health scoring, churn alerts, upsell detection |
-| **Grow** | `/casestudy` | Case study generation from client results |
-| **Audit** | `/pipeline` | Full pipeline metrics, bottlenecks, revenue forecast |
+## Quick Start
 
-## Who It's For
+```
+/icp saas                    # Build your Ideal Client Profile for SaaS companies
+/prospect "Acme Corp"        # Research and score a prospect
+/outreach "Jane at Acme"     # Generate PAS email + 3 follow-ups
+/qualify "Jane"              # Run qualification checklist
+```
 
-- Solo consultants going from 2 clients to 10
-- Agencies at $20K/mo targeting $100K/mo
-- SaaS founders doing founder-led sales
-- Freelancers escaping feast-or-famine cycles
-- Local service businesses wanting more leads
-- AI services companies building pipeline
+## Full Version
 
-## Replaces
+The free edition covers the basics. The full version at **koino.capital/kits** adds:
 
-| Tool | Cost | What We Replace |
-|------|------|----------------|
-| Apollo.io | $49/user/mo | ICP + prospecting |
-| Instantly.ai | $30/mo | Outreach sequencing |
-| Lemlist | $69/user/mo | Personalization engine |
-| HeyReach | $79/mo | LinkedIn outreach strategy |
-| Rocketlane | $29/user/mo | Client onboarding |
-| **Total** | **$256-656/mo** | **$0 with this skill** |
+- 4 cold email frameworks (not just PAS)
+- LinkedIn connection + DM sequences
+- BANT + MEDDIC lead scoring (0-100)
+- 60-second proposal generator
+- Contract and SOW templates
+- Client health scoring with churn detection
+- Referral automation
+- Full pipeline audit with revenue forecasting
+- Case study generator
+- Personalization engine
 
-## Setup
+Replaces $250-650/month in sales tooling (Apollo, Instantly, Lemlist, HeyReach, Rocketlane).
 
-1. Copy to your OpenClaw skills directory
-2. Ensure `ollama` is running with `qwen2.5:3b` (or any model)
-3. Run any command: `/prospect "Acme Corp"`
+**Get the full version → [koino.capital/kits](https://koino.capital/kits)**
 
-## Key Files
+## Requirements
 
-- `SKILL.md` -- Full skill definition with all commands and rules
-- `references/outreach-templates.md` -- Cold email, DM, LinkedIn frameworks
-- `references/qualification-frameworks.md` -- BANT, MEDDIC, and scoring rubrics
-- `references/pricing-strategies.md` -- Pricing psychology and strategies
-- `scripts/prospect.sh` -- CLI prospect research tool
-- `scripts/outreach.sh` -- CLI outreach sequence generator
-- `SCORECARD.md` -- Pipeline health metrics and benchmarks
+- Ollama with any model (default: qwen2.5:3b)
+- curl, jq
+
+## Author
+
+KOINO Capital — koino.capital

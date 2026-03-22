@@ -1,32 +1,42 @@
 {
-  "name": "objection-destroyer",
+  "name": "objection-destroyer-lite",
   "version": "1.0.0",
-  "description": "Universal sales objection handling system. Real-time classification, response generation, practice drilling, and win-rate tracking across all industries.",
+  "edition": "free",
+  "description": "Free objection handling skill -- 3 frameworks, 20 universal objections, 10 drill scenarios. Classify, respond, and close.",
   "author": "KOINO Capital",
-  "license": "proprietary",
-  "tags": ["sales", "objections", "negotiation", "persuasion", "closing", "coaching"],
+  "license": "free-distribution",
+  "tags": ["sales", "objections", "closing", "free", "coaching", "drill"],
   "requires": {
-    "ollama": "qwen2.5:3b",
     "shell": "bash"
   },
   "commands": {
     "destroy": "Classify and respond to an objection in real-time",
-    "drill": "Practice mode — random objection scenarios, timed responses",
-    "analyze": "Analyze a conversation transcript for objection patterns",
-    "library": "Browse objection database by industry and type",
-    "score": "Track and report win rates by objection type and framework",
-    "preempt": "Generate preemptive objection handling for a pitch"
+    "drill": "Practice mode -- 10 random objection scenarios"
   },
-  "industries": ["saas", "insurance", "real-estate", "d2d", "agency", "recruiting", "negotiation"],
   "frameworks": [
     "feel-felt-found",
-    "isolate-and-solve",
     "boomerang",
-    "preemptive-strike",
-    "social-proof-stack",
-    "cost-of-inaction",
-    "the-takeaway"
+    "cost-of-inaction"
   ],
   "objection_types": ["price", "timing", "authority", "need", "trust", "competition"],
-  "ip_notice": "KOINO Capital original IP. All rights reserved."
+  "limits": {
+    "frameworks": "3 of 7",
+    "objections": "20 universal (no industry-specific)",
+    "drill_scenarios": 10,
+    "analytics": false,
+    "tone_matching": false,
+    "escalation_detection": false
+  },
+  "upgrade": {
+    "url": "https://koino.capital/kits",
+    "full_version": "objection-destroyer",
+    "includes": [
+      "7 frameworks (4 additional)",
+      "100 industry-specific objections",
+      "75 drill scenarios with difficulty levels",
+      "Win-rate tracking + CSV analytics",
+      "Tone matching + escalation detection",
+      "Persuasion science (Cialdini, Kahneman, Voss)"
+    ]
+  }
 }

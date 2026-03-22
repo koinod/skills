@@ -1,13 +1,17 @@
 {
-  "name": "content-engine",
+  "name": "content-engine-lite",
   "version": "1.0.0",
-  "description": "Universal content repurposing system. Takes any raw content (podcast, webinar, video, blog, course) and outputs a complete multi-platform content ecosystem with hooks, calendars, engagement scoring, and brand voice enforcement.",
+  "description": "Free content repurposing starter. Takes raw content and outputs 5 clips for Instagram Reels + LinkedIn with 10 hook formulas and a 3-post/week calendar. Upgrade to full version at koino.capital/kits.",
   "author": "KOINO Capital",
-  "license": "proprietary",
+  "license": "free",
   "category": "content",
-  "tags": ["content", "repurposing", "social-media", "short-form", "hooks", "calendar", "brand-voice"],
+  "tags": ["content", "repurposing", "social-media", "short-form", "hooks", "free", "lite"],
+  "upstream": {
+    "full_version": "content-engine",
+    "upgrade_url": "https://koino.capital/kits"
+  },
   "requires": {
-    "tools": ["ollama", "jq", "curl"],
+    "tools": ["ollama", "jq"],
     "models": ["qwen2.5:3b"],
     "env_vars": []
   },
@@ -15,47 +19,43 @@
     "source": {
       "type": "string",
       "required": true,
-      "description": "Path to raw content file (transcript, blog post, video notes) or URL"
+      "description": "Path to raw content file (transcript, blog post, video notes)"
     },
-    "brand_voice": {
+    "brand_name": {
       "type": "string",
       "required": false,
-      "description": "Path to brand voice config file (see references/brand-voice-template.md)"
+      "description": "Brand or creator name"
     },
-    "platforms": {
-      "type": "array",
+    "tone": {
+      "type": "string",
       "required": false,
-      "default": ["instagram", "tiktok", "linkedin", "x", "youtube_shorts"],
-      "description": "Target platforms for output"
+      "default": "conversational, direct",
+      "description": "Desired tone (e.g. 'edgy, no-BS' or 'warm, professional')"
+    },
+    "topics": {
+      "type": "string",
+      "required": false,
+      "description": "Core content topics (comma-separated)"
     },
     "clips": {
       "type": "integer",
       "required": false,
-      "default": 20,
-      "description": "Number of clips to generate (15-30)"
-    },
-    "output_dir": {
-      "type": "string",
-      "required": false,
-      "default": "./content-engine-output",
-      "description": "Output directory for all generated assets"
+      "default": 5,
+      "max": 5,
+      "description": "Number of clips to generate (max 5 in lite)"
     }
   },
   "outputs": {
-    "clips/": "Individual clip files with hook, body, CTA, platform variants",
-    "calendar.md": "7-day posting calendar with optimal times",
-    "hook-vault-applied.md": "Hook formulas applied to this specific content",
-    "engagement-scores.csv": "Predicted engagement ranking for all clips",
-    "hashtag-strategy.md": "Platform-specific hashtag/keyword strategy",
-    "caption-variants.md": "A/B caption variants for split testing",
-    "thumbnail-concepts.md": "Visual concepts with text overlay suggestions",
-    "weekly-report-template.md": "Analytics framework for tracking performance",
-    "brand-voice-check.md": "Brand consistency audit of all outputs"
+    "clips/": "5 clip files with hook, body, CTA — Instagram Reels + LinkedIn versions",
+    "calendar.md": "3-post/week schedule"
+  },
+  "limits": {
+    "max_clips": 5,
+    "platforms": ["instagram", "linkedin"],
+    "hook_formulas": 10
   },
   "estimated_tokens": {
-    "per_minute_of_source": 800,
-    "20_clips_total": "~25,000 tokens input + ~40,000 tokens output",
-    "cost_local_ollama": "$0.00",
-    "cost_vs_content_manager": "$3,000-5,000/month saved"
+    "per_run": "~8,000 tokens input + ~12,000 tokens output",
+    "cost_local_ollama": "$0.00"
   }
 }

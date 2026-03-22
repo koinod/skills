@@ -1,27 +1,25 @@
 {
-  "name": "deep-research",
+  "name": "deep-research-lite",
   "version": "1.0.0",
-  "description": "Institutional-grade deep research engine. Multi-source triangulation, contrarian analysis, confidence scoring, and actionable synthesis across 6 research modes.",
+  "display_name": "Deep Research Lite",
+  "description": "Structured research skill with Market and Technical research modes, 3-tier source evaluation, convergence mapping, and confidence scoring. Free edition.",
   "author": "KOINO Capital",
-  "license": "proprietary",
-  "tags": ["research", "intelligence", "analysis", "osint", "competitive-intelligence", "alpha"],
-  "triggers": ["/research", "/investigate", "/intel", "/deep-dive"],
-  "modes": ["market", "technical", "people", "trend", "risk", "alpha"],
-  "inputs": {
-    "topic": { "type": "string", "required": true, "description": "The subject to research" },
-    "mode": { "type": "string", "required": false, "default": "market", "enum": ["market", "technical", "people", "trend", "risk", "alpha"] },
-    "depth": { "type": "string", "required": false, "default": "standard", "enum": ["quick", "standard", "exhaustive"] },
-    "output_format": { "type": "string", "required": false, "default": "report", "enum": ["report", "brief", "raw", "csv"] }
-  },
-  "outputs": {
-    "report": "Structured research report with confidence scores and citations",
-    "sources": "Evaluated and scored source list",
-    "blindspots": "Identified gaps in available information",
-    "actions": "Prioritized next steps"
-  },
-  "estimated_time": {
-    "quick": "2-5 minutes",
-    "standard": "10-20 minutes",
-    "exhaustive": "30-60 minutes"
+  "license": "free",
+  "tags": ["research", "market-research", "technical-research", "analysis", "free"],
+  "modes": ["market", "technical"],
+  "triggers": ["/research market", "/research technical"],
+  "full_version": {
+    "url": "https://koino.capital/kits",
+    "additional_modes": ["people", "trend", "risk", "alpha"],
+    "additional_features": [
+      "CRAAP+ 25-point source scoring",
+      "8 synthesis patterns",
+      "Blind spot detection",
+      "Contrarian analysis",
+      "Bellingcat OSINT frameworks",
+      "Hedge fund CI methods",
+      "Temporal analysis",
+      "Network analysis"
+    ]
   }
 }

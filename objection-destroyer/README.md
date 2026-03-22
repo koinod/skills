@@ -1,97 +1,42 @@
-# Objection Destroyer
+# Objection Destroyer (Free Edition)
 
-> KOINO Capital Original IP. The skill that pays for itself on the first call.
+> Turn every "no" into a closed deal.
 
-## What It Does
+## What You Get
 
-Universal sales objection handling system that makes anyone unbeatable at handling objections in sales, negotiations, and persuasion.
+- **6-type objection classification** -- instantly identify price, timing, authority, need, trust, or competition objections
+- **3 proven frameworks** -- Feel-Felt-Found, Boomerang, Cost of Inaction
+- **20 universal objections** with battle-tested responses at 3 intensity levels
+- **10 drill scenarios** -- practice handling objections with scoring and feedback
 
-- **Classifies** any objection into 6 types (price, timing, authority, need, trust, competition)
-- **Generates** instant responses using 7 proven frameworks
-- **Matches** the prospect's communication style automatically
-- **Detects** when to push vs. pull back
-- **Drills** you with realistic scenarios across 5 industries
-- **Tracks** which frameworks produce the highest win rates
+## Commands
+
+| Command | What It Does |
+|---------|-------------|
+| `destroy` | Paste an objection, get classification + 3 responses |
+| `drill` | 10-round practice mode with scoring |
 
 ## Quick Start
 
-### Handle an objection
-Ask the agent with the objection-destroyer skill loaded:
+Give it any objection a prospect has thrown at you:
 
-```
-Destroy this objection: "We're happy with our current solution"
-Industry: SaaS
-Context: Mid-market company, VP of Sales, second call
-```
+> "It's too expensive."
 
-### Practice mode
-```bash
-chmod +x scripts/drill.sh
-./scripts/drill.sh           # 10 reps, closer difficulty, mixed industries
-./scripts/drill.sh 20 destroyer saas  # 20 reps, no hints, SaaS only
-./scripts/drill.sh 5 rookie insurance # 5 reps, with hints, insurance
-```
+Get back: type, severity, framework, three response options (aggressive / balanced / soft), and follow-up plays.
 
-### Preempt objections in a pitch
-```
-Preempt objections for: Agency retainer pitch, $5K/month, prospect is a 50-person e-commerce brand
-```
+## Full Version
 
-### Analyze a transcript
-```
-Analyze this sales call transcript for objection patterns: [paste transcript]
-```
+This free edition covers the fundamentals. The full Objection Destroyer adds:
 
-## Frameworks
+- 4 more frameworks (Isolate & Solve, Preemptive Strike, Social Proof Stack, The Takeaway)
+- 100 industry-specific objections (SaaS, insurance, D2D, real estate, agency)
+- Full persuasion science backing (Cialdini, Kahneman, Voss)
+- 75 drill scenarios with Rookie / Closer / Destroyer difficulty
+- Win-rate tracking + CSV analytics
+- Tone matching + escalation detection
 
-1. **Feel-Felt-Found** -- empathy-based reframing
-2. **Isolate & Solve** -- confirm the ONLY objection, then handle it
-3. **Boomerang** -- turn the objection into a reason to buy
-4. **Preemptive Strike** -- handle objections before they surface
-5. **Social Proof Stack** -- similar person + similar situation + positive outcome
-6. **Cost of Inaction** -- reframe price against the cost of NOT buying
-7. **The Takeaway** -- strategic withdrawal to create urgency
+**Get the full version at [koino.capital/kits](https://koino.capital/kits)**
 
-## File Structure
+---
 
-```
-objection-destroyer/
-├── _meta.json                          # Skill metadata and config
-├── SKILL.md                            # Core skill definition (agent reads this)
-├── README.md                           # This file
-├── SCORECARD.md                        # Tracking template for win rates
-├── references/
-│   ├── frameworks.md                   # All 7 frameworks with examples
-│   ├── industry-objections.md          # Top 20 objections x 5 industries
-│   └── psychology.md                   # Cialdini, Kahneman, Voss research
-└── scripts/
-    └── drill.sh                        # Interactive practice mode
-```
-
-## Psychology Backing
-
-Every framework maps to peer-reviewed research:
-- **Cialdini**: Reciprocity, Commitment, Social Proof, Authority, Liking, Scarcity, Unity
-- **Kahneman & Tversky**: Loss Aversion, Anchoring, Status Quo Bias, Framing Effect
-- **Chris Voss**: Tactical Empathy, Labeling, Calibrated Questions, Accusation Audit
-- **Sandler**: Pain Funnel, Negative Reverse Selling, Equal Business Stature
-
-## Competitive Comparison
-
-| Feature | Gong ($5K + $1.4K/user/yr) | Chorus ($1.2K/user/yr) | Objection Destroyer ($0) |
-|---------|---------------------------|----------------------|-------------------------|
-| Objection detection | Post-call tagging | Post-call tagging | Real-time classification |
-| Response generation | None (analytics only) | None (analytics only) | Instant, 3 tone variants |
-| Practice mode | Call library review | Call library review | Interactive drilling |
-| Framework library | None | None | 7 frameworks, industry-mapped |
-| Psychology backing | None | None | Full Cialdini/Kahneman/Voss |
-| Runs locally | No (cloud SaaS) | No (cloud SaaS) | Yes (Ollama + bash) |
-| Price | $6,400+/year | $1,200+/year | Free (KOINO IP) |
-
-## Ethics
-
-This system is built on a foundation of genuine value delivery:
-- Never generates deceptive or manipulative responses
-- Recommends walking away when the product isn't right for the prospect
-- Respects hard boundaries
-- The goal is helping prospects make the best decision, not "winning"
+*Built by KOINO Capital*

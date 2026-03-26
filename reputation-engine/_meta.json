@@ -1,0 +1,21 @@
+{
+  "name": "reputation-engine-lite",
+  "version": "1.0.0",
+  "description": "Lite version of Reputation Engine. Framework-driven review response generator for service businesses. HEARD/AMPLIFY/BRIDGE frameworks. Full version at koino.capital/kits.",
+  "author": "KOINO Capital",
+  "license": "MIT",
+  "tags": ["reputation", "reviews", "local-business", "response-templates", "lite"],
+  "category": "business/reputation",
+  "pricing": {
+    "tier": "free",
+    "full_version": "koino.capital/kits"
+  },
+  "requirements": {
+    "openclaw": ">=2026.1.0",
+    "models": ["any LLM with 4K+ context"]
+  },
+  "commands": {
+    "respond": "Generate review response using HEARD/AMPLIFY/BRIDGE framework",
+    "templates": "Template library by industry"
+  }
+}

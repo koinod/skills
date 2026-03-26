@@ -1,0 +1,21 @@
+{
+  "name": "proposal-machine-lite",
+  "version": "1.0.0",
+  "description": "Lite version of Proposal Machine. Generates structured service proposals with 3-tier pricing psychology. 2 commands, 2 vertical templates. Full version at koino.capital/kits.",
+  "author": "KOINO Capital",
+  "license": "MIT",
+  "tags": ["proposals", "sales", "pricing", "service-business", "agency", "lite"],
+  "category": "business/sales",
+  "pricing": {
+    "tier": "free",
+    "full_version": "koino.capital/kits"
+  },
+  "requirements": {
+    "openclaw": ">=2026.1.0",
+    "models": ["any LLM with 4K+ context"]
+  },
+  "commands": {
+    "quick-propose": "1-page proposal outline",
+    "pricing": "3-tier pricing structure"
+  }
+}

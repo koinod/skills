@@ -1,0 +1,29 @@
+{
+  "name": "knowledge-extractor",
+  "version": "1.0.0-lite",
+  "description": "Lite version — Extract tacit knowledge from calls, meetings, Slack, and docs. Builds expertise maps and surfaces knowledge gaps. Upgrade at koino.capital/kits for auto-SOP generation, semantic search, onboarding packages, and bus factor analysis.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": [
+    "knowledge-management",
+    "tacit-knowledge",
+    "expertise-mapping",
+    "knowledge-base",
+    "sop-generation"
+  ],
+  "category": "business/knowledge-management",
+  "pricing": {
+    "tier": "lite (free)",
+    "full_version": "koino.capital/kits"
+  },
+  "requirements": {
+    "openclaw": ">=2026.1.0",
+    "models": ["any LLM with 8K+ context"]
+  },
+  "commands": {
+    "extract": "Full extraction from any source",
+    "quick": "Rapid extraction (decisions + actions)",
+    "map": "Expertise map",
+    "gaps": "Knowledge gap analysis"
+  }
+}

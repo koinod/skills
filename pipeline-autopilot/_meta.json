@@ -1,0 +1,30 @@
+{
+  "name": "pipeline-autopilot",
+  "version": "1.0.0-lite",
+  "description": "Lite version — Autonomous pipeline management with deal health scoring, daily priority stacks, stale deal recovery, and forecasting. Upgrade at koino.capital/kits for auto-drafted follow-ups, churn prediction, rep scoring, and autonomous watch mode.",
+  "author": "KOINO Capital",
+  "license": "proprietary",
+  "tags": [
+    "sales",
+    "pipeline-management",
+    "deal-scoring",
+    "forecasting",
+    "sales-ops"
+  ],
+  "category": "business/sales-ops",
+  "pricing": {
+    "tier": "lite (free)",
+    "full_version": "koino.capital/kits"
+  },
+  "requirements": {
+    "openclaw": ">=2026.1.0",
+    "models": ["any LLM with 8K+ context"]
+  },
+  "commands": {
+    "brief": "Daily pipeline briefing",
+    "score": "Deal health scoring",
+    "recover": "Stale deal recovery",
+    "forecast": "Weighted forecast",
+    "ingest": "Import pipeline data"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "meeting-prep-lite",
+  "version": "1.0.0",
+  "display_name": "Meeting Prep Lite",
+  "description": "Auto-prepares you for any meeting in 60 seconds. Company intel, person background, talking points, objection prep, and recommended meeting arc. Free edition with Sales + Partner meeting types.",
+  "author": "KOINO Capital",
+  "license": "free",
+  "tags": ["meetings", "sales", "research", "prep", "intelligence", "networking", "business-development", "free"],
+  "triggers": ["/meeting-prep"],
+  "modes": ["sales", "partner"],
+  "full_version": {
+    "url": "https://koino.capital/kits",
+    "additional_modes": ["investor", "hiring", "vendor", "media", "board"],
+    "additional_features": [
+      "Multi-person prep with group dynamics",
+      "Post-meeting follow-up drafts",
+      "Series tracking across meetings",
+      "Competitive battle card generation",
+      "LinkedIn warm-up suggestions",
+      "Power Move insights"
+    ]
+  }
+}

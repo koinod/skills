@@ -1,0 +1,24 @@
+{
+  "name": "email-responder-lite",
+  "version": "1.0.0",
+  "display_name": "Email Responder Lite",
+  "description": "Drafts professional email responses instantly. Analyzes tone, urgency, intent, and subtext of incoming emails, then generates 3 response variants (formal, conversational, brief) plus follow-up strategy. Free edition.",
+  "author": "KOINO Capital",
+  "license": "free",
+  "tags": ["email", "communication", "sales", "productivity", "writing", "business", "free"],
+  "triggers": ["/email-respond"],
+  "modes": ["standard"],
+  "full_version": {
+    "url": "https://koino.capital/kits",
+    "additional_modes": ["thread", "batch", "negotiate", "careful"],
+    "additional_features": [
+      "Full email thread analysis",
+      "Batch mode for inbox zero",
+      "Negotiation mode with BATNA framework",
+      "Tone calibration for sensitive situations",
+      "20+ response templates",
+      "Objection handling frameworks",
+      "Power dynamic analysis"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # Master Skill Index
 
-> **76 production-tested skills** for sales, content, research, agent infrastructure, and ops.
+> **79 production-tested skills** for sales, content, research, agent infrastructure, and ops.
 > Drop-in compatible with Claude Code, OpenClaw, Codex, ChatGPT (Agent Skills open standard).
 
 **For agents:** scan this file to find a skill. Each entry links to its dir; the dir contains `SKILL.md` (the instruction file you load) plus optional `README.md`, `scripts/`, `references/`.
@@ -11,12 +11,21 @@
 
 ---
 
+## Recently Added
+
+- **2026-05-22** [twitter-algorithm-optimizer](./twitter-algorithm-optimizer) — rewrite tweets for reach using Twitter's open-sourced ranking algorithm *(lifted from ComposioHQ/awesome-claude-skills)*
+- **2026-05-22** [lead-research-assistant](./lead-research-assistant) — qualify leads via product analysis + target-company search + outreach strategy *(lifted from ComposioHQ/awesome-claude-skills)*
+- **2026-05-22** [competitive-ads-extractor](./competitive-ads-extractor) — extract + analyze competitor ads from ad libraries (Facebook, LinkedIn) *(lifted from ComposioHQ/awesome-claude-skills)*
+
+---
+
 ## Sales & Revenue (12)
 
 - **[ai-cold-email](./ai-cold-email)** — Generate personalized cold outreach emails using AI
 - **[client-acquisition](./client-acquisition)** — Free edition — ICP builder + 1 email framework
 - **[cold-email-writer](./cold-email-writer)** — Cold Email Writer generates hyper-personalized outbound emails given a company name, industry, and pain point
 - **[cold-outreach](./cold-outreach)** — Generate personalized cold outreach sequences using proven sales frameworks
+- **[lead-research-assistant](./lead-research-assistant)** — Identifies high-quality leads by analyzing your business, searching target companies, and providing outreach strategies
 - **[lead-scorer](./lead-scorer)** — Score and prioritize your leads with AI
 - **[objection-destroyer](./objection-destroyer)** — You are the Objection Destroyer -- a battle-tested objection handling system that produces responses that close
 - **[pipeline-autopilot](./pipeline-autopilot)** — You are an autonomous sales pipeline operator
@@ -35,6 +44,7 @@
 - **[brand-operator](./brand-operator)** — This skill enables integration with Brand Operator for marketing automation and content management
 - **[community-manager](./community-manager)** — Manage online communities with engagement strategies, content planning, and audience growth
 - **[community-mod-pack](./community-mod-pack)** — Assist community moderation with summaries, spam detection suggestions, and draft replies for Discord or Telegram
+- **[competitive-ads-extractor](./competitive-ads-extractor)** — Extracts + analyzes competitor ads from ad libraries (Facebook, LinkedIn) to inform your own campaigns
 - **[content-engine](./content-engine)** — You are Content Engine Lite, a free content repurposing assistant
 - **[content-qa-scorer](./content-qa-scorer)** — Content QA Scorer evaluates written content (social posts, emails, blog articles, ad copy, video scripts) against 7 batt
 - **[content-repurpose](./content-repurpose)** — Transform long-form content into 10 platform-optimized social media assets
@@ -46,6 +56,7 @@
 - **[pls-marketing-ideas](./pls-marketing-ideas)** — Generate campaign concepts, viral hooks, and marketing strategies that go beyond "buy my product." Use when: (1) Planning campaigns, (2) Creating cont
 - **[proposal-generator](./proposal-generator)** — Proposal Generator creates polished, ready-to-send service proposals in markdown format
 - **[proposal-machine](./proposal-machine)** — You are Proposal Machine Lite, a proposal generation engine for service businesses
+- **[twitter-algorithm-optimizer](./twitter-algorithm-optimizer)** — Rewrite tweets for maximum reach using Twitter's open-source ranking algorithm (Real-graph, SimClusters, TwHIN, Tweepcred)
 - **[youtube-watcher](./youtube-watcher)** — Fetch and read transcripts from YouTube videos
 
 ## Research & Intelligence (10)
